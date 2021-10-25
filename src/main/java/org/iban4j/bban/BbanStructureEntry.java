@@ -28,7 +28,7 @@ public class BbanStructureEntry {
     private final EntryCharacterType characterType;
     private final int length;
 
-    private static Map<EntryCharacterType, char[]> charByCharacterType;
+    private static final Map<EntryCharacterType, char[]> charByCharacterType;
     private final Random random = new Random();
 
     static {
@@ -45,7 +45,7 @@ public class BbanStructureEntry {
         }
         charByCharacterType.put(EntryCharacterType.a, charTypeA.toString().toCharArray());
 
-        charByCharacterType.put(EntryCharacterType.c, (charTypeN.toString() + charTypeA.toString()).toCharArray());
+        charByCharacterType.put(EntryCharacterType.c, (charTypeN.toString() + charTypeA).toCharArray());
     }
 
     private BbanStructureEntry(final BbanEntryType entryType,
@@ -110,7 +110,7 @@ public class BbanStructureEntry {
     }
 
     public String getRandom() {
-        StringBuilder s = new StringBuilder("");
+        StringBuilder s = new StringBuilder();
         char[] charChoices = charByCharacterType.get(characterType);
         if (charChoices == null) {
             throw new RuntimeException(String.format("programmer has not implemented choices for character type %s",

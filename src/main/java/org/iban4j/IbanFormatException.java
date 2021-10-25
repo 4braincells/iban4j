@@ -161,7 +161,7 @@ public class IbanFormatException extends Iban4jException {
         return bbanEntryType;
     }
 
-    public static enum IbanFormatViolation {
+    public enum IbanFormatViolation {
         UNKNOWN,
 
         IBAN_FORMATTING,

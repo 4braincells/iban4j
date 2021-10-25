@@ -123,7 +123,7 @@ public class BicFormatException extends Iban4jException {
         return actual;
     }
 
-    public static enum BicFormatViolation {
+    public enum BicFormatViolation {
         UNKNOWN,
 
         BIC_NOT_NULL,

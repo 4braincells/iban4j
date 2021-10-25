@@ -80,5 +80,7 @@ A Java library for generation and validation of the International Bank Account N
 ## License
 Copyright 2015 Artur Mkrtchyan.
 
+SEPA parts Copyright 2019 Stefan Scheid.
+
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
 
