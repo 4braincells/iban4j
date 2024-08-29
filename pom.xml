@@ -20,7 +20,7 @@
 
     <groupId>org.iban4j</groupId>
     <artifactId>iban4j</artifactId>
-    <version>3.3.2-RELEASE</version>
+    <version>3.2.2-RELEASE</version>
     <packaging>jar</packaging>
 
     <name>iban4j</name>
@@ -64,8 +64,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdkVersion>1.7</jdkVersion>
-        <jdk7Signature>java17</jdk7Signature>
+        <jdkVersion>17</jdkVersion>
         <skipSigning>true</skipSigning>
     </properties>
 

@@ -17,6 +17,8 @@ package org.iban4j;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 
@@ -106,5 +108,11 @@ public class CountryCodeTest {
     @Test
     public void getAlpha3WithDECodeShouldReturnGermany() {
         assertThat(CountryCode.DE.getAlpha3(), is(equalTo("DEU")));
+    }
+
+    @Test
+    public void checkSepaCountries() {
+        long numberOfSepaCountries = Arrays.stream(CountryCode.values()).filter(CountryCode::isSepaCountry).count();
+        assertThat(numberOfSepaCountries, is(equalTo(36L)));
     }
 }

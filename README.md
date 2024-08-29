@@ -65,7 +65,7 @@ A Java library for generation and validation of the International Bank Account N
 <dependency>
   <groupId>org.iban4j</groupId>
   <artifactId>iban4j</artifactId>
-  <version>3.2.1</version>
+  <version>3.2.2</version>
 </dependency>
 ```
 
@@ -75,12 +75,13 @@ A Java library for generation and validation of the International Bank Account N
 
 - http://en.wikipedia.org/wiki/ISO_13616
 - http://en.wikipedia.org/wiki/ISO_9362
+- https://www.swift.com/swift-resource/252246/download  IBAN format description from SWIFT
 - https://www.ecb.europa.eu/paym/retpaym/paymint/sepa/shared/pdf/iban_registry.pdf
 
 ## License
 Copyright 2015 Artur Mkrtchyan.
 
-SEPA parts Copyright 2019 Stefan Scheid.
+SEPA parts contributed 2019/2024 by Stefan Scheid.
 
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
 
